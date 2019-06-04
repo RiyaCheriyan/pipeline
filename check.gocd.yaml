@@ -1,0 +1,14 @@
+format_version: 5
+pipelines:
+  check:
+    group: 
+    materials:
+      mygit:
+        git: 'git@github.com:RiyaCheriyan/pipeline.git'
+    stages:
+     - build:
+        jobs:
+          hello:
+            tasks:
+             - exec:
+                command: env
